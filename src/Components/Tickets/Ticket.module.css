@@ -1,0 +1,76 @@
+.ticketWrap {
+	border: 1px solid #f0f0f0;
+	background-color: white;
+	border-radius: 8px;
+	display: flex;
+	min-width: 700px;
+}
+
+.ticketLeft {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #f0f0f0;
+	padding: 24px;
+}
+
+.logo {
+	width: 100px;
+}
+
+.ticketRight {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	padding: 24px;
+	flex-grow: 1;
+}
+
+.time {
+	font-size: 32px;
+	color: #616161;
+	font-weight: 500;
+}
+
+.ticketArrival {
+	align-items: flex-end;
+}
+
+.ticketDeparture,
+.ticketArrival {
+	display: flex;
+	flex-direction: column;
+}
+
+.airport {
+	color: #4a4a4a;
+	font-weight: 500;
+}
+
+.date {
+	color: #939393;
+}
+
+.ticketTransfer {
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: grey;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 0 20px 10px;
+	border-bottom: 1px solid #d2d5d6;
+}
+
+.ticketTransfer::after {
+	content: '✈︎';
+	position: absolute;
+	bottom: -13px;
+	right: -19px;
+	font-size: 19px;
+	color: #d2d5d6;
+}
